@@ -1,1 +1,29 @@
-ㅂㅈㄷㅂㅈㄷ
+
+대표적인 오픈소스 소프트웨어
+->파이썬, 사이킷런, MySql, MongoDB 등등
+
+오픈소스 라이선스 저작권
+->오픈소스 SW 개발자가 만들어 놓은 저작권의 범위에 따라 해당 소프트웨어를 사용
+
+작업 디렉토리, 스테이징 영역에 저장하고 작업 폴더를 정리
+* $ git stash
+* $ git stash -m "메세지"
+* $ git stash save
+* $ git stash save "메세지"
+
+최근 또는 지정된 임시저장소 내용을 가져와 반영하고 삭제
+* $ git stash pop
+* $ git stash pop stash@{n}
+
+저장 목록 보기(임시)
+* $ git stash list
+
+커밋 자료와 해당 stash 항목 간의 차이로 표시
+* $ git stash show stash@{n}
+* $ git stash show stash@{n} -p
+
+저장된 임시저장 내용을 삭제
+* $ git stash drop stash@{n}
+
+모든 stash 목록을 제거
+* $ git stash clear
